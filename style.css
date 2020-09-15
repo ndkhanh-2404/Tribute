@@ -1,3 +1,197 @@
-.header a img{
-    width: 200px;
+body{
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+.background{
+    position: relative;
+    z-index: 0;
+}
+.back {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation-name: backdiv;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.heart {
+    position: absolute;
+    margin: auto;
+    top: 1100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.heart:after {
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+}
+.heart:before {
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+  }
+
+@keyframes backdiv {
+    50% {
+      background: #ffe6f2;
+    }
+}
+
+@keyframes beat {
+    0% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(0.6) rotate(-45deg);
+    }
+}
+.container{
+    position: absolute;
+    width: 100%;
+    margin: 0px;
+    z-index: 2;
+}
+.header{
+    height: 50px;
+    background-image: linear-gradient(0,#ff764d,#f34939);
+    position: sticky;
+    top:0px;
+}
+.grid{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.header-list-1{
+    list-style: none;
+    padding-left: 0px;
+    left: 10px;
+    width: 700px;
+    border-width: 1px;
+}
+.header-list-2{
+    list-style: none;
+    padding-left: 0px;
+    left: 10px;
+}
+.header-item{
+    display: inline-block;
+    margin: 0px 8px;
+}
+.header-item-link{
+    color: white;
+    font-size: 16px;
+    margin-right: 20px;
+}
+div{
+    margin:0px;
+}
+body{
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color:rgb(119, 21, 199) ;
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+}
+input{
+    border: none;
+    height: 20px;
+    border-radius: 30px;
+}
+p{
+    size: 25px;
+    margin-left: 27px;
+    text-align: left;
+}
+.header-list input{
+    width: 300px;
+    height: 20px;
+}
+.header-list button{
+    width: 70px;
+    border: none;
+    height: 25px;
+    border-radius: 20px;
+}
+.resume{
+    width: 30%;
+    padding: 10px 35%;
+    color:rgb(119, 21, 199) ;
+    font-family: monospace;
+
+}
+.avatar{
+    width: 300px;
+    padding-left: 15%;
+    margin-bottom: 5%;
+}
+.avatar-description{
+    width: 150%;
+    position: relative;
+    left: -20%;
+    text-align: justify;
+}
+.sign-in{
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.sign-in div{
+    width: 30%;
+    margin: 10px auto;
+    position: relative;
+}
+.sign-in input{
+    width: 70%;
+}
+.sign-in label{
+    width: 30%;
+}
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+.age {
+    display: flex;
+    justify-content: space-between;
+}
+.sign-in-success{
+    height: 20px;
+    width: 50%;
+    margin-bottom: 10px;
 }

@@ -3,22 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tribute Page</title>
-    <style type="text/css" href=></style>
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="background">
+        <div class="back"></div>
+        <div class="heart"></div>
+    </div>
     <div class="container">
         <div class="header">
-            <a href="" class="logo">
-                <img src="https://www.codeseek.co/images/logo.png" alt="#" class="logo">
-            </a>
-            <h1>Tribute Page</h1>
-            <div class="actions">
-                <a href="">
-                    <img src="arrow.png" alt="#">
-                    Back to tutorial</a>
-                <a href="">Download</a>
+            <div class="grid">
+                <nav class="navbar">
+                    <ul class="header-list">
+                        <li class="header-item"><a class="header-item-link" href="https://www.facebook.com">Home Page</a></li>
+                        <li class="header-item"><a class="header-item-link" href="https://www.facebook.com/KeiT2418/">Personal Page</a></li>
+                        <input class="header-item" type="text">
+                        <button  type="submit">Search</button>
+                    </ul>
+                    <ul class="header-list">
+                        <li class="header-item"><a class="header-item-link header-item-link--strong" href="#">Sign In</a></li>
+                        <li class="header-item"><a class="header-item-link header-item-link--strong" href="#">Sign Up</a></li>
+                    </ul>
+                </nav>
             </div>
+        </div>
+        
+        <div class="content">
+            <div class="content">
+                <div class="resume grid">
+                    <h3>Fullname: Nguyễn Duy Khánh</h3> 
+                    <img class="avatar" src="https://scontent.fhan5-4.fna.fbcdn.net/v/t1.0-9/109045306_279608076699168_53863151202444543_n.jpg?_nc_cat=104&_nc_sid=09cbfe&_nc_ohc=vezlqfVDfE0AX97lPGD&_nc_ht=scontent.fhan5-4.fna&oh=795f89ec1a7d30bd8ba13382c9b56bfb&oe=5F869713" 
+                    alt="Ảnh Khánh và .... " srcset="">
+                    <p>Email: ndkhanh.2404@gmail.com</p>
+                    <p>Phone: 0362765148</p>
+                    <p>Facebook: <a href="https://www.facebook.com/KeiT2418/">Nguyễn Khánh</a></p>
+                    <p class="avatar-description">Before I met you, I didn’t think love was for me. 
+                        It was something other people had and felt. Something in movies and in TV 
+                        shows. It felt more like a wish I had then something real. Now that I’m with 
+                        you, love is so much more tangible. It’s something I can reach out and touch. 
+                        It’s so much more than a wish or a hope (though it does give me hope, for so 
+                        many things), it’s the very real, wonderful person I wake up to. The warm hand 
+                        next to mine, the brush of hair against my cheek. I love you and because of 
+                        that love, I love so much more than you. I love myself and the world in a way 
+                        I never thought possible. You’ve made that possible for me. You’ve made 
+                        everything possible.</p>
+                </div>
+                <form class="sign-in" action="" >
+                    <div class="name">
+                        <label class="sigin-in--name" for="Get-name">Name: </label>
+                        <input type="text" placeholder="  Nhập tên">
+                    </div>
+                    <div class="age">
+                        <label for="Get-age">Age: </label>
+                        <input type="number" name="Age" min="18" max="50">
+                    </div>
+                    <div>
+                        <button class="sign-in-success" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+
         </div>
     </div>
 </body>
